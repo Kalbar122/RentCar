@@ -1,9 +1,6 @@
 <?php
-
 namespace Kasia\EpopeeBundle\Entity;
-
 use Doctrine\ORM\Mapping as ORM;
-
 /**
  * Reflection
  *
@@ -20,29 +17,24 @@ class Reflection
      * @ORM\GeneratedValue(strategy="AUTO")
      */
     private $id;
-
     /**
      * @var string
      *
      * @ORM\Column(name="title", type="string", length=50)
      */
     private $title;
-
     /**
      * @var string
      *
      * @ORM\Column(name="content", type="text")
      */
     private $content;
-
     /**
      * @var \DateTime
      *
-     * @ORM\Column(name="createAt", type="datetimetz")
+     * @ORM\Column(name="createdAt", type="datetime")
      */
-    private $createAt;
-
-
+    private $createdAt;
     /**
      * Get id
      *
@@ -52,7 +44,6 @@ class Reflection
     {
         return $this->id;
     }
-
     /**
      * Set title
      *
@@ -63,10 +54,8 @@ class Reflection
     public function setTitle($title)
     {
         $this->title = $title;
-
         return $this;
     }
-
     /**
      * Get title
      *
@@ -76,7 +65,6 @@ class Reflection
     {
         return $this->title;
     }
-
     /**
      * Set content
      *
@@ -87,10 +75,8 @@ class Reflection
     public function setContent($content)
     {
         $this->content = $content;
-
         return $this;
     }
-
     /**
      * Get content
      *
@@ -100,29 +86,25 @@ class Reflection
     {
         return $this->content;
     }
-
     /**
-     * Set createAt
+     * Set createdAt
      *
-     * @param \DateTime $createAt
+     * @param \DateTime $createdAt
      *
      * @return Reflection
      */
-    public function setCreateAt($createAt)
+    public function setCreatedAt($createdAt)
     {
-        $this->createAt = $createAt;
-
+        $this->createdAt = $createdAt;
         return $this;
     }
-
     /**
-     * Get createAt
+     * Get createdAt
      *
      * @return \DateTime
      */
-    public function getCreateAt()
+    public function getCreatedAt()
     {
-        return $this->createAt;
+        return $this->createdAt;
     }
 }
-

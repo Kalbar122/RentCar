@@ -1,11 +1,8 @@
 <?php
-
 namespace Kasia\EpopeeBundle\Form;
-
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
-
 class ReflectionType extends AbstractType
 {
     /**
@@ -17,7 +14,7 @@ class ReflectionType extends AbstractType
         $builder
             ->add('title')
             ->add('content')
-            //->add('createAt')
+            // ->add('createdAt', 'datetime')
         ;
     }
     
