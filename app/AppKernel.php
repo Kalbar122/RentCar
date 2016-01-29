@@ -18,6 +18,7 @@ class AppKernel extends Kernel
             new AppBundle\AppBundle(),
             new Kasia\HelloBundle\KasiaHelloBundle(),
             new Kasia\EpopeeBundle\KasiaEpopeeBundle(),
+            new RentCarBundle\RentCarBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'), true)) {

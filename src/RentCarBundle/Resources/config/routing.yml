@@ -1,0 +1,6 @@
+rent_car_homepage:
+    path:     /
+    defaults: { _controller: RentCarBundle:Default:index }
+RentCarBundle_contact:
+    path:     /contact
+    defaults: { _controller: RentCarBundle:contact:index }

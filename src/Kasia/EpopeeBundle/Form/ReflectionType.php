@@ -14,6 +14,7 @@ class ReflectionType extends AbstractType
         $builder
             ->add('title')
             ->add('content')
+			->add('createAt')
             // ->add('createdAt', 'datetime')
         ;
     }

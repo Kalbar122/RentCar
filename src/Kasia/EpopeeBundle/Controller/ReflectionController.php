@@ -27,3 +27,11 @@ class ReflectionController extends Controller
     }
 
 }
+/*public function indexAction()
+    {
+		$em = $this->getDoctrine()->getManager();
+		$reflectionRepository = $em->getRepository("KasiaEpopeeBundle:Reflection"); 
+		$reflections = $
+        return $this->render('KasiaEpopeeBundle:Default:index.html.twig'), array('reflections'=$reflections);
+    }
+*/
