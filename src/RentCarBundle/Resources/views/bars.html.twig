@@ -1,8 +1,9 @@
 {% extends 'RentCarBundle::layout.html.twig' %}
 
 {% block menu %}
-	<ul class="nav nav-tabs">
-			<li><a href="{{path('rentcarbundle_contact')}}">Kontakt</a></li>
-			<li><a href="{{path('rentcarbundle_cars')}}">Samochody</a></li>
+	<ul class="nav nav-tabs text-center">
+			<li><a class="btn btn-default" href="/~s181306/app_dev.php/rc">Strona główna</a></li>
+			<li><a href="{{path('rentcarbundle_contact')}}" class="btn btn-default">Kontakt</a></li>
+			<li><a href="{{path('rentcarbundle_cars')}}" class="btn btn-default">Samochody</a></li>
 	</ul>
 {% endblock %}
