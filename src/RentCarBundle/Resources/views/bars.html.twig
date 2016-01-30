@@ -1,13 +1,8 @@
-{% extends 'KasiaEpopeeBundle::layout.html.twig' %}
+{% extends 'RentCarBundle::layout.html.twig' %}
 
 {% block menu %}
 	<ul class="nav nav-tabs">
-			<li><a href="{{path('RentCarBundle_contact')}}">Kontakt </a></li>
+			<li><a href="{{path('rentcarbundle_contact')}}">Kontakt</a></li>
+			<li><a href="{{path('rentcarbundle_cars')}}">Samochody</a></li>
 	</ul>
-{% endblock %}
-
-{% block sidebar %}
-	<a href="{{path('kasia_epopee_homepage')}}" type="button" class="btn-primary btn-lg btn-block"><span class="glyphicon glyphicon-home"></span> Strona główna</a>
-	<a href="{{path('kasia_epopee_reflection_form')}}" type="button" class="btn-primary btn-lg btn-block"><span class="glyphicon glyphicon-ok"></span> Refleksje</a>
-	<a href="{{path('kasia_epopee_reflection_index')}}" type="button" class="btn-primary btn-lg btn-block"><span class="glyphicon glyphicon-ok"></span> Lista refleksji</a>
 {% endblock %}

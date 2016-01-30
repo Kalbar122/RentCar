@@ -1,1 +1,0 @@
-{% extends 'RentCarBundle::bars.html.twig' %}
