@@ -1,7 +1,7 @@
 <?php
 // src/AppBundle/CouchDocument/User.php
 
-namespace RentCarBundle\CouchDocument;
+namespace RentCarBundle\Entity;
 
 use FOS\UserBundle\Model\User as BaseUser;
 use Doctrine\ORM\Mapping as ORM;
