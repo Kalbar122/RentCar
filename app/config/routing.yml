@@ -13,3 +13,4 @@ kasia_hello:
 app:
     resource: "@AppBundle/Controller/"
     type:     annotation
+
