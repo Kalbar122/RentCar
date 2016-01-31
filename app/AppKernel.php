@@ -19,6 +19,7 @@ class AppKernel extends Kernel
             new Kasia\HelloBundle\KasiaHelloBundle(),
             new Kasia\EpopeeBundle\KasiaEpopeeBundle(),
             new RentCarBundle\RentCarBundle(),
+            new FOS\UserBundle\FOSUserBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'), true)) {
