@@ -8,7 +8,11 @@ class CarsController extends Controller
 {
     public function indexAction()
     {
-        return $this->render('RentCarBundle:Cars:index.html.twig');
+        $em = $this->getDoctrine()->getManager();
+        $cars = $em->getRepository('RentCarBundle:Car')->findAll();
+        return $this->render('RentCarBundle:Cars:index.html.twig', array(
+        	'cars'=> $cars
+        ));
     }
 }
 
