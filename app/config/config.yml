@@ -11,8 +11,6 @@ imports:
 parameters:
     locale: en
 
-framework:
-    translator: ~
 
 framework:
     #esi:             ~
