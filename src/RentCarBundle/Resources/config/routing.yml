@@ -7,3 +7,6 @@ rentcarbundle_contact:
 rentcarbundle_cars:
     path:     /cars/
     defaults: { _controller: RentCarBundle:Cars:index}
+rentcarbundle_car1:
+    path:     /car1/
+    defaults: { _controller: RentCarBundle:Car1:index}

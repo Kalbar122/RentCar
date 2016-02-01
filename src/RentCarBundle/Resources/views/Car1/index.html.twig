@@ -1,0 +1,15 @@
+{% extends 'RentCarBundle::bars.html.twig' %}
+{% block content %}
+<dl class="dl-horizontal">
+                                <dt>Marka</dt>
+                                <dd>{{car1[1].marka}}</dd>
+                                <dt>Model</dt>
+                                <dd>{{car1[1].model}}</dd>
+                                <dt>Klasa</dt>
+                                <dd>{{car1[1].klasa}}</dd>
+                                <dt>Cena</dt>
+                                <dd>{{car1[1].cena}} zł/h</dd>
+<img src="/~s180463/bundles/rentcar/images/car1.png" class="img-responsive center-block"/n>
+Fiat 126 (centoventisei) – samochód osobowy skonstruowany w zakładach FIAT, produkowany we Włoszech w latach 1972–1980, a w Polsce od 6 czerwca 1973 do 22 września 2000 roku (Polski Fiat 126p)[1]. Polska wersja licencyjna produkowana była przez Fabrykę Samochodów Małolitrażowych „Polmo” Bielsko-Biała w Bielsku-Białej oraz w Tychach. Jego poprzednikiem był Fiat 500, następcą Fiat Cinquecento.
+<a class="btn btn-primary navbar-right"> Wypożycz</a>
+{% endblock %}
