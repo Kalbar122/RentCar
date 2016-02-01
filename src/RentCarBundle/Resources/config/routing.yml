@@ -16,3 +16,6 @@ rentcarbundle_car2:
 rentcarbundle_car3:
     path:     /car3/
     defaults: { _controller: RentCarBundle:Car3:index}
+rentcarbundle_car4:
+    path:     /car4/
+    defaults: { _controller: RentCarBundle:Car4:index}
