@@ -1,6 +1,6 @@
 rent_car:
     resource: "@RentCarBundle/Resources/config/routing.yml"
-    prefix:   /rc
+    prefix:   /
 
 kasia_epopee:
     resource: "@KasiaEpopeeBundle/Resources/config/routing.yml"
