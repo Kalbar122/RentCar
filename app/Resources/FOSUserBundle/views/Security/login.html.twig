@@ -26,6 +26,6 @@
     </label>
   </div>
     	<input class="btn btn-primary btn-block" type="submit" id="_submit" name="_submit" value="{{ 'security.login.submit'|trans }}" /></br>
-    	<a href="{{path('fos_user_registration_register')}}">Nie masz konta? Zarejestruj się!</a>
+    	<a class="btn btn-warning" href={{ path('fos_user_registration_register') }}>Zarejestru się</a>
 </form>
 {% endblock fos_user_content %}
