@@ -13,7 +13,8 @@
 
 		<link rel="stylesheet" type="text/css" href="{{asset('bandles/rentcar/css/style.css')}}">
 		<title>Wypożycz starocia</title>
-	</head>	
+		<link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+</head>
 	<body>
 		{% if app.user %}
 			<p>Logged in as: {{ app.user.username }}</p>
@@ -47,9 +48,11 @@
 					{% block sidebar %}
 					{% endblock %}
 				</div>
-				<div id="content" class="col-sm-12 col-lg-12">
+				<div id="content" class="col-sm-12 col-lg-12 text-center" >
 					{% block content %}
 						<h1>Witamy serdecznie na stronie wypożyczalni zdezelowanych samochodów.</h1>
+						</div>
+						<div>
 						<img src="/~s180463/bundles/rentcar/images/home_page_img.png" class="img-responsive center-block"/n>
 						<p>Jesteśmy firmą zajmującą się wypożyczaniem samochodów od 1993 roku z główną siedzibą w Burkina Faso.
 						Jesteśmy młodym dynamicznym zespołem, który połączyła pasja do starych PRLowskich samochodów. 
