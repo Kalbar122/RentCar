@@ -17,10 +17,20 @@
                                 <dd>{{cars[1].klasa}}</dd>
                                 <dt>Cena</dt>
                                 <dd>{{cars[1].cena}} zł/h</dd>
+<<<<<<< HEAD
 <a href = {{path('rentcarbundle_car1')}}><img src="/~s180463/bundles/rentcar/images/car1.png" class="img-responsive center-block"/n>
 <a class="btn btn-primary navbar-right"> Wypożycz</a>
 
 <h2>Fiat 125 p</h2>
+=======
+<a href = {{path('rentcarbundle_car1')}}><img src="/~s180463/bundles/rentcar/images/car1.png" class="img-responsive center-block"/n></a>
+{% if app.user %}
+<a href="{{path('rentcarbundle_order')}}" class="btn btn-default">Wypożycz</a>
+{% else %}
+<a class="btn btn-danger" href={{ path('fos_user_security_login') }}>Wypożycz</a>
+{% endif %}
+<h2>Drugie auto</h2>
+>>>>>>> 326992c727e962b01ff57db1ed2f7905236b0405
 <dl class="dl-horizontal">
                                 <dt>Marka</dt>
                                 <dd>{{cars[2].marka}}</dd>
@@ -31,8 +41,17 @@
                                 <dt>Cena</dt>
                                 <dd>{{cars[2].cena}} zł/h</dd>
 <a href = {{path('rentcarbundle_car2')}}><img src="/~s180463/bundles/rentcar/images/car2.png" class="img-responsive center-block"/n>
+<<<<<<< HEAD
 <a class="btn btn-primary navbar-right"> Wypożycz</a>
 <h2>FSO Polonez</h2>
+=======
+{% if app.user %}
+<a href="{{path('rentcarbundle_order')}}" class="btn btn-default">Wypożycz</a>
+{% else %}
+<a class="btn btn-danger" href={{ path('fos_user_security_login') }}>Wypożycz</a>
+{% endif %}
+<h2>Trzecie auto</h2>
+>>>>>>> 326992c727e962b01ff57db1ed2f7905236b0405
 <dl class="dl-horizontal">
                                 <dt>Marka</dt>
                                 <dd>{{cars[3].marka}}</dd>
@@ -43,7 +62,11 @@
                                 <dt>Cena</dt>
                                 <dd>{{cars[3].cena}} zł/h</dd>
 <a href = {{path('rentcarbundle_car3')}}><img src="/~s180463/bundles/rentcar/images/car3.png" class="img-responsive center-block"/n>
-<a class="btn btn-primary navbar-right"> Wypożycz</a>
+{% if app.user %}
+<a href="{{path('rentcarbundle_order')}}" class="btn btn-default">Wypożycz</a>
+{% else %}
+<a class="btn btn-danger" href={{ path('fos_user_security_login') }}>Wypożycz</a>
+{% endif %}
 
 
 <h2>FSM Syrenka</h2>
@@ -57,7 +80,11 @@
                                 <dt>Cena</dt>
                                 <dd>{{cars[4].cena}} zł/h</dd>
 <a href = {{path('rentcarbundle_car4')}}><img src="/~s180463/bundles/rentcar/images/car4.png" class="img-responsive center-block"/n>
-<a class="btn btn-primary navbar-right"> Wypożycz</a>
+{% if app.user %}
+<a href="{{path('rentcarbundle_order')}}" class="btn btn-default">Wypożycz</a>
+{% else %}
+<a class="btn btn-danger" href={{ path('fos_user_security_login') }}>Wypożycz</a>
+{% endif %}
 
 
 <h2>Skoda Felicia</h2>
@@ -71,7 +98,11 @@
                                 <dt>Cena</dt>
                                 <dd>{{cars[5].cena}} zł/h</dd>
 <a href = {{path('rentcarbundle_car5')}}><img src="/~s180463/bundles/rentcar/images/car5.png" class="img-responsive center-block"/n>
-<a class="btn btn-primary navbar-right"> Wypożycz</a>
+{% if app.user %}
+<a href="{{path('rentcarbundle_order')}}" class="btn btn-default">Wypożycz</a>
+{% else %}
+<a class="btn btn-danger" href={{ path('fos_user_security_login') }}>Wypożycz</a>
+{% endif %}
 
 </table>
 </div>

@@ -11,5 +11,9 @@
                                 <dd>{{car5[5].cena}} zł/h</dd>
 <img src="/~s180463/bundles/rentcar/images/car5.png" class="img-responsive center-block"/n>
 Škoda Favorit – handlowa nazwa czeskich (do 1992 r. czechosłowackich) samochodów osobowych produkowanych przez firmę Škoda Auto na przełomie lat 80. i 90. XX wieku (typ 781). Pierwszy model o tej nazwie produkowany był jeszcze przed wojną (typ 904/923)
-<a class="btn btn-primary navbar-right"> Wypożycz</a>
+{% if app.user %}
+<a href="{{path('rentcarbundle_order')}}" class="btn btn-default">Wypożycz</a>
+{% else %}
+<a class="btn btn-danger" href={{ path('fos_user_security_login') }}>Wypożycz</a>
+{% endif %}
 {% endblock %}

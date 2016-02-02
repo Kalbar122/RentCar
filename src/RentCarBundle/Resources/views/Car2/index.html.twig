@@ -11,5 +11,10 @@
                                 <dd>{{car2[2].cena}} zł/h</dd>
 <img src="/~s180463/bundles/rentcar/images/car2.png" class="img-responsive center-block"/n>
 Polski Fiat 125p – samochód osobowy klasy średniej produkowany w FSO od 28 listopada 1967[2] do 29 czerwca 1991 na podstawie umowy licencyjnej z włoską firmą FIAT z 1965 roku. Po wygaśnięciu licencji w 1983 roku nazwę zmieniono na FSO 125p.
-<a class="btn btn-primary navbar-right"> Wypożycz</a>
+{% if app.user %}
+<a href="{{path('rentcarbundle_order')}}" class="btn btn-default">Wypożycz</a>
+{% else %}
+<a class="btn btn-danger" href={{ path('fos_user_security_login') }}>Wypożycz</a>
+{% endif %}
+
 {% endblock %}
