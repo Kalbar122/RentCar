@@ -27,7 +27,10 @@ class CarOrder
      * @ORM\Column(name="IdSamochod", type="integer")
      */
     private $idSamochod;
-
+	/**
+     * @OneToMany(targetEntity="Car")
+     * @JoinColumn(name="id", referencedColumnName="Samochod_id")
+     */
     /**
      * @var \DateTime
      *
@@ -48,7 +51,11 @@ class CarOrder
      * @ORM\Column(name="IdUzytkownika", type="integer")
      */
     private $idUzytkownika;
-
+	
+    /**
+     * @OneToOne(targetEntity="User")
+     * @JoinColumn(name="user_id", referencedColumnName="id")
+     */
 
     /**
      * Get id

@@ -12,6 +12,11 @@ use Doctrine\ORM\Mapping as ORM;
  */
 class Car
 {
+	 /**
+     * @ManyToOne(targetEntity="idSamochodu", inversedBy="Samochod_id")
+     * @JoinColumn(name="Samochod_id", mappedBy="car")
+     */
+     /**
     /**
      * @var int
      *
@@ -20,8 +25,7 @@ class Car
      * @ORM\GeneratedValue(strategy="AUTO")
      */
     private $id;
-
-    /**
+    /*
      * @var string
      *
      * @ORM\Column(name="Marka", type="string", length=50)
