@@ -11,5 +11,10 @@
                                 <dd>{{car4[4].cena}} zł/h</dd>
 <img src="/~s180463/bundles/rentcar/images/car4.png" class="img-responsive center-block"/n>
 Syrena – rodzina polskich samochodów osobowych i dostawczych produkowanych w latach 1957–1972 przez Fabrykę Samochodów Osobowych w Warszawie, a od 1972 do 1983 przez Fabrykę Samochodów Małolitrażowych w Bielsku-Białej. Wyprodukowano 521 311 egzemplarzy modelu
-<a class="btn btn-primary navbar-right"> Wypożycz</a>
+{% if app.user %}
+<a href="{{path('rentcarbundle_order')}}" class="btn btn-default">Wypożycz</a>
+{% else %}
+<a class="btn btn-danger" href={{ path('fos_user_security_login') }}>Wypożycz</a>
+{% endif %}
+
 {% endblock %}

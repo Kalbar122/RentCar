@@ -11,5 +11,10 @@
                                 <dd>{{car3[3].cena}} zł/h</dd>
 <img src="/~s180463/bundles/rentcar/images/car3.png" class="img-responsive center-block"/n>
 FSO Polonez – samochód osobowy produkowany przez Fabrykę Samochodów Osobowych w Warszawie od 3 maja 1978 roku do 22 kwietnia 2002 roku[5][6]. Powstał jako następca Polskiego Fiata 125p, który był jednak produkowany równolegle aż do 1991 roku. Przez cały okres produkcji samochód przeszedł kilka większych modernizacji, wprowadzano także kolejne odmiany.
-<a class="btn btn-primary navbar-right"> Wypożycz</a>
+{% if app.user %}
+<a href="{{path('rentcarbundle_order')}}" class="btn btn-default">Wypożycz</a>
+{% else %}
+<a class="btn btn-danger" href={{ path('fos_user_security_login') }}>Wypożycz</a>
+{% endif %}
+
 {% endblock %}
