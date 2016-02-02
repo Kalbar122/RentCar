@@ -12,9 +12,6 @@ use Doctrine\ORM\Mapping as ORM;
  */
 class User extends BaseUser
 {
-	/**
-     * @OneToMany(targetEntity="CarOrder", mappedBy="user")
-     */
     /**
      * @ORM\Id
      * @ORM\Column(type="integer")
