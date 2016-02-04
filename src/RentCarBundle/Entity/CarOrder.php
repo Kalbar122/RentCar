@@ -14,6 +14,7 @@ class CarOrder
 {
     /**
      * @var int
+     * @OneToMany(targetEntity="Car", mappedBy="idSamochodu")
      *
      * @ORM\Column(name="id", type="integer")
      * @ORM\Id

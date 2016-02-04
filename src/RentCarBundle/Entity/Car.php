@@ -14,6 +14,8 @@ class Car
 {
     /**
      * @var int
+     * @ManyToOne(targetEntity="CarOrder")
+     * @JoinColumn(name="id_Samochodu", referencedColumnName="id")
      *
      * @ORM\Column(name="id", type="integer")
      * @ORM\Id
