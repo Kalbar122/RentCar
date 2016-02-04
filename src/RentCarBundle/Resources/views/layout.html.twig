@@ -13,14 +13,16 @@
 
 		<link rel="stylesheet" type="text/css" href="{{asset('bandles/rentcar/css/style.css')}}">
 		<title>Wypożycz starocia</title>
-	</head>	
+		<link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+</head>
 	<body>
 		{% if app.user %}
 			<p>Logged in as: {{ app.user.username }}</p>
 			<a class="btn btn-primary" href={{ path('fos_user_security_logout') }}>Wyloguj się</a>
+			<a class="btn btn-primary" href={{ path('fos_user_profile_show') }}>Moje Konto</a>
 		{% else %}
 			<a class="btn btn-primary" href={{ path('fos_user_security_login') }}>Zaloguj się</a>
-			<a class="btn btn-warning" href={{ path('fos_user_registration_register') }}>Zarejestru się</a>
+			<a class="btn btn-warning" href={{ path('fos_user_registration_register') }}>Zarejestruj się</a>
 		{% endif %}
 
 
@@ -47,11 +49,14 @@
 					{% block sidebar %}
 					{% endblock %}
 				</div>
-				<div id="content" class="col-sm-12 col-lg-12">
+				<div id="content" class="col-sm-12 col-lg-12" >
 					{% block content %}
+
 						<h1>Witamy serdecznie na stronie wypożyczalni zdezelowanych samochodów.</h1>
+				</div>
+				<div class="panel panel-default">
 						<img src="/~s180463/bundles/rentcar/images/home_page_img.png" class="img-responsive center-block"/n>
-						<p>Jesteśmy firmą zajmującą się wypożyczaniem samochodów od 1993 roku z główną siedzibą w Burkina Faso.
+						<p> Jesteśmy firmą zajmującą się wypożyczaniem samochodów od 1993 roku z główną siedzibą w Burkina Faso.
 						Jesteśmy młodym dynamicznym zespołem, który połączyła pasja do starych PRLowskich samochodów. 
 						Nie dajemy gwarancji na nasze samochody gdyż są one starsze niż ich użytkownicy. Naszymi autami są: 
 						 <ul>
@@ -61,8 +66,9 @@
 						<li>Znajomosc rynku Afrykańskiego</li>
 						</ul>
 						</p>
-					{% endblock %}
-				</div>
+						</div>
+						<img src="/~s180463/bundles/rentcar/images/zapro.png" class="img-responsive center-block"/n>
+						{% endblock %}
 			</div> 
 		</div>
 		<footer class="footer">
